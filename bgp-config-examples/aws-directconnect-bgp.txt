@@ -1,0 +1,11 @@
+
+# AWS Direct Connect BGP Configuration Example
+
+Local ASN: 64512
+AWS ASN: 7224
+Peer IP: 169.254.100.1
+
+router bgp 64512
+  neighbor 169.254.100.1 remote-as 7224
+  neighbor 169.254.100.1 password StrongBGPpw!
+  network 10.0.0.0 mask 255.255.0.0

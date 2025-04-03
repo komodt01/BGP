@@ -1,0 +1,11 @@
+
+# Multi-Cloud BGP Setup Summary
+
+On-Prem ASN: 64512
+AWS Transit Gateway ASN: 64513
+Azure ASN: 12076
+
+- On-prem to TGW via BGP over Direct Connect
+- TGW to Azure via VPN + BGP over ExpressRoute Gateway
+- MD5 auth required on all peers
+- Prefix filtering applied to all BGP sessions
